@@ -29,4 +29,4 @@ class CustomException(Exception):
         self.error = error
         self.detail = detail
     def __str__(self):
-        return self.error_message_detail(self.error, self.detail)
+        return error_message_detail(self.error, self.detail)
