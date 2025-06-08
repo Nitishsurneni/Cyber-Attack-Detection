@@ -1,12 +1,12 @@
 from setuptools import find_packages, setup
 from typing import List 
-hypen_e = '-e .'
+hyphen_e = '-e .'
 def remove_hyphen_e(requirements: List[str]) -> List[str]:
     """
     This function removes the '-e .' entry from the requirements list.
     """
-    if hypen_e in requirements:
-        requirements.remove(hypen_e)
+    if hyphen_e in requirements:
+        requirements.remove(hyphen_e)
     return requirements
 
 def get_requirements(file_path: str) -> List[str]:
